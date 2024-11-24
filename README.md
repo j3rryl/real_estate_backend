@@ -7,23 +7,18 @@
 ```
 python -m venv venv
 ```
-
-```
-
 2. Activate the virtual environment
-
+```
 - Windows: `venv\Scripts\activate`
 - macOS/Linux: `source venv/bin/activate`
-
+```
 3. Install the requirements
+```
 pip install -r requirements.txt
 ```
 
-
 4. Database Setup
 ```
-
-
 python manage.py makemigrations
 python manage.py migrate
 ```
@@ -35,26 +30,16 @@ python manage.py migrate
 
 To populate the database with sample properties:
 ```
-
 python manage.py seed_properties 10
 ```
 
-
-
-```
-
-5. Create admin user
-
-```
 
 ## Running the Project
 
 1. Start the development server
 
 ```
-
 python manage.py runserver
-
 ```
 
 The server will start at `http://127.0.0.1:8000/`
