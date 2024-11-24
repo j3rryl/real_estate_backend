@@ -5,7 +5,9 @@
 1. Create a virtual environment
 
 ```
-source venv/bin/activate
+python -m venv venv
+```
+
 ```
 
 2. Activate the virtual environment
@@ -16,14 +18,29 @@ source venv/bin/activate
 3. Install the requirements
 
 ```
+
 pip install -r requirements.txt
+
 ```
 
 4. Database Setup
 
 ```
+
 python manage.py makemigrations
 python manage.py migrate
+
+```
+## Development Tools
+
+### Seeding Data
+
+To populate the database with sample properties:
+
+```
+
+python manage.py seed_properties 10
+
 ```
 
 5. Create admin user
@@ -33,11 +50,13 @@ python manage.py migrate
 ## Running the Project
 
 1. Start the development server
+
 ```
 
 python manage.py runserver
 
 ```
+
 The server will start at `http://127.0.0.1:8000/`
 
 2. Access the admin panel at `http://127.0.0.1:8000/admin`
@@ -45,17 +64,21 @@ The server will start at `http://127.0.0.1:8000/`
 ## Development Tools
 
 ### Seeding Data
+
 To populate the database with sample properties:
+
 ```
 
 python manage.py seed_properties 10
 
 ```
+
 This will create 10 sample property listings.
 
 ## Dependencies
 
 The project requires the following packages:
+
 - Django
 - Django REST Framework
 - Pillow (for image processing)
@@ -66,6 +89,7 @@ The project requires the following packages:
 All dependencies are listed in `requirements.txt`
 
 ## Notes
+
 - Make sure to configure your image upload settings in the Django settings file
 - Check the image upload string configuration before deploying
 
@@ -87,3 +111,4 @@ You can further customize this by adding:
 - Deployment instructions
 - Contributing guidelines
 - License information
+```
