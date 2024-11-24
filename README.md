@@ -16,30 +16,30 @@ python -m venv venv
 - macOS/Linux: `source venv/bin/activate`
 
 3. Install the requirements
-
-```
-
 pip install -r requirements.txt
-
 ```
+
 
 4. Database Setup
-
 ```
+
 
 python manage.py makemigrations
 python manage.py migrate
-
 ```
+
+
 ## Development Tools
 
 ### Seeding Data
 
 To populate the database with sample properties:
-
 ```
 
 python manage.py seed_properties 10
+```
+
+
 
 ```
 
